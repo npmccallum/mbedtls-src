@@ -78,6 +78,7 @@ impl Build {
 
         let mut ios_isysroot: std::option::Option<String> = None;
         let mut build = self.cmd_make();
+        build.env("PYTHON", "python3");
 
         let mut cc = cc::Build::new();
         cc.target(target).host(host).warnings(false).opt_level(3);

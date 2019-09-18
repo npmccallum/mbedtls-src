@@ -1,6 +1,6 @@
 FROM @IMAGE@
 
-RUN sudo dnf install -y cargo rustfmt python2 make
+RUN sudo dnf install -y cargo rustfmt make python3
 
 ENV RUST_BACKTRACE=1
 

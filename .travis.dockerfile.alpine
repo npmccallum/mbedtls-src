@@ -1,6 +1,6 @@
 FROM @IMAGE@
 
-RUN apk add rust cargo gcc make python2
+RUN apk add rust cargo gcc make python3
 
 ENV RUST_BACKTRACE=1
 
